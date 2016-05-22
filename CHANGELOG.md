@@ -1,7 +1,5 @@
 ## 0.1.0 - First Release
-* HTML, CSS, JS
+* XML, HTML, CSS, JS
 * Less, Sass
 * Markdown
-
-Prints well :
-* Ruby, Java, C/C++
+* PHP, Ruby, Java, C/C++

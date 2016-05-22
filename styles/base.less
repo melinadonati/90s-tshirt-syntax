@@ -212,6 +212,11 @@ atom-text-editor .search-results .marker.current-result .region,
   &.entity.css {
     color: @green;
   }
+
+  &.embedded.php {
+    color: darken(@green,10%);
+    font-weight: bold;
+  }
 }
 
 .support {
@@ -258,6 +263,7 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @red;
     font-weight: bold;
 
+    &.xml,
     &.structure {
       color: @blue;
     }
@@ -326,6 +332,9 @@ atom-text-editor .search-results .marker.current-result .region,
     &.structure {
       color: @blue;
     }
+    &.xml {
+      color: @light-blue;
+    }
 
     &.inline {
       color: @pink;
@@ -338,6 +347,10 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .markup {
+  &.strike {
+    color: @red;
+    text-decoration: line-through;
+  }
   &.link {
     color: @light-blue;
     text-decoration: underline;
@@ -385,11 +398,15 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 }
 .source.gfm {
+  .support {
+    color: @green;
+    background-color: darken(@very-dark-gray, 10%);
+  }
   .entity {
     color: @dark-pink;
   }
   .variable {
-    color: @red;
+    color: @yellow;
   }
   .hr {
     color: @green;
@@ -397,6 +414,14 @@ atom-text-editor .search-results .marker.current-result .region,
       content: "";
       display: block;
       border-bottom: 1px solid @green;
+    }
+  }
+  .table {
+    .pipe {
+      color: @light-blue;
+    }
+    .header {
+      color: @blue;
     }
   }
 }
@@ -418,4 +443,9 @@ atom-text-editor .search-results .marker.current-result .region,
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
+}
+
+atom-text-editor::shadow .asciidoc .block,
+:host .asciidoc .block {
+  color: @syntax-text-color;
 }
