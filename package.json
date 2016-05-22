@@ -11,7 +11,7 @@
     "vintage",
     "90s"
   ],
-  "repository": "https://github.com/atom/90s-tshirt-syntax",
+  "repository": "https://github.com/melinadonati/90s-tshirt-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
